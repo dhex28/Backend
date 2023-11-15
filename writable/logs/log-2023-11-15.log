@@ -1,0 +1,15 @@
+CRITICAL - 2023-11-15 01:36:46 --> Undefined property: stdClass::$room_image
+in APPPATH\Controllers\MainController.php on line 36.
+ 1 APPPATH\Controllers\MainController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$room_image', 'C:\\laragon\\www\\Veronica_backend\\app\\Controllers\\MainController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-15 03:27:29 --> Error fetching data: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2023-11-15 03:27:35 --> Error fetching data: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2023-11-15 03:27:37 --> Error fetching data: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2023-11-15 03:27:39 --> Error fetching data: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2023-11-15 03:27:42 --> Error fetching data: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2023-11-15 03:27:45 --> Error fetching data: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2023-11-15 03:27:46 --> Error fetching data: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+ERROR - 2023-11-15 03:27:48 --> Error fetching data: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
