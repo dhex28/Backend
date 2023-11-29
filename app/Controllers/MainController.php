@@ -4,10 +4,13 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\AmenitiesModel;
+use App\Models\CategoryModel;
+use App\Models\ProductModel;
 use CodeIgniter\Restful\ResourceController;
 use CodeIgniter\API\ResponseTrait;
 use App\Models\MainModel;
 use App\Models\UserModel;
+
 
 class MainController extends ResourceController
 {
@@ -27,23 +30,45 @@ class MainController extends ResourceController
             return $this->failServerError('An error occurred while fetching data.');
         }
     }
-    
     public function save()
-    {
-        $json = $this->request->getJSON();
+{
+    try {
+        // Use CodeIgniter's file helper to handle file uploads
+        $roomImage = $this->request->getFile('room_image');
+
+        // Use the provided image name
+        $imageName = $roomImage->getName();
+
         $data = [
-            'name' => $json->name,
-            'description' => $json->description,
-            'price' => $json->price,
-            'capacity' => $json->capacity,
-            'num_bed' => $json->num_bed,
-            'room_image' => $json->room_image,
+            'name' => $this->request->getPost('name'),
+            'description' => $this->request->getPost('description'),
+            'price' => $this->request->getPost('price'),
+            'capacity' => $this->request->getPost('capacity'),
+            'num_bed' => $this->request->getPost('num_bed'),
+            'room_image' => base_url() . $this->handleImageUpload($roomImage, $imageName),
         ];
+
         $main = new MainModel();
         $r = $main->save($data);
+
         return $this->respond($r, 200);
+    } catch (\Exception $e) {
+        log_message('error', 'Error saving data: ' . $e->getMessage());
+        return $this->failServerError('An error occurred while saving data.');
     }
-    
+}
+
+
+
+    private function handleImageUpload($roomImage, $imageName)
+    {
+        // Move the uploaded image to the desired directory
+        $roomImage->move(ROOTPATH . 'public/uploads/', $imageName);
+
+        // Return the relative path to save in the database
+        return 'uploads/' .$imageName;
+    }
+        
 
     public function amenitiesgetData()
     {
@@ -58,18 +83,104 @@ class MainController extends ResourceController
     }
     public function amenitiesSave()
     {
-        $json = $this->request->getJSON();
-        $data = [
-            'name' => $json->name,
-            'category' => $json->category,
-            'description' => $json->description,
-            'price' => $json->price,
-            
-        ];
-        $main = new AmenitiesModel();
-        $r = $main->save($data);
-        return $this->respond($r, 200);
+        try {
+            // Use CodeIgniter's file helper to handle file uploads
+            $amenitiesImage = $this->request->getFile('amenities_image');
+    
+            // Use the provided image name
+            $imageName = $amenitiesImage->getName();
+    
+            $data = [
+                'name' => $this->request->getPost('name'),
+                'category' => $this->request->getPost('category'),
+                'description' => $this->request->getPost('description'),
+                'price' => $this->request->getPost('price'),
+                'amenities_image' => base_url() . $this->amenitieshandleImageUpload($amenitiesImage, $imageName),
+            ];
+    
+            $main = new AmenitiesModel();
+            $r = $main->save($data);
+    
+            return $this->respond($r, 200);
+        } catch (\Exception $e) {
+            log_message('error', 'Error saving data: ' . $e->getMessage());
+            return $this->failServerError('An error occurred while saving data.');
+        }
     }
+
+    private function amenitieshandleImageUpload($amenitiesImage, $imageName)
+    {
+        // Move the uploaded image to the desired directory
+        $amenitiesImage->move(ROOTPATH . 'public/uploads/', $imageName);
+
+        // Return the relative path to save in the database
+        return 'uploads/' .$imageName;
+    }
+
+    public function inventorySave()
+    {
+        try {
+    
+            $data = [
+                'product_name' => $this->request->getPost('product_name'),
+                'category_id' => $this->request->getPost('category_id'),
+                'price' => $this->request->getPost('price'),
+                'quantity' => $this->request->getPost('quantity'),
+                'status' => $this->request->getPost('status'),
+
+            ];
+    
+            $productModel = new ProductModel();
+            $savedData = $productModel->save($data);
+    
+            return $this->respond($savedData, 200);
+        } catch (\Exception $e) {
+            log_message('error', 'Error saving data:' . $e->getMessage());
+            return $this->failServerError('An error occurred while saving the data.');
+        }
+    }
+
+    public function getInventory()
+    {
+      $produ = new ProductModel();
+      $datas = $produ->findAll();
+      return $this->respond($datas, 200);
+    }
+    
+    public function saveCateg()
+    {
+        try {
+            $data = [
+                'category_name' => $this->request->getPost('category_name'),
+            ];
+    
+            $categoryModel = new CategoryModel();
+            $savedData = $categoryModel->save($data);
+    
+            return $this->respond($savedData, 200);
+        } catch (\Exception $e) {
+            log_message('error', 'Error saving data:' . $e->getMessage());
+            return $this->failServerError('An error occurred while saving the data.');
+        }
+    }
+    
+    
+      public function getCategory()
+    {
+        $category = new CategoryModel();
+        $data = $category->findAll();
+    
+        $categories = []; // Initialize an array to hold formatted categories
+        foreach ($data as $category) {
+            $categories[] = [
+                'id' => $category['id'],
+                'category_name' => $category['category_name']
+            ];
+        }
+    
+        return $this->respond($categories, 200);
+      }
+    
     public function update($id = null)
     {
         try {
@@ -110,6 +221,8 @@ class MainController extends ResourceController
             return $this->failServerError('An error occurred while updating data.');
         }
     }
+
+    
     
     public function register()
     {

@@ -13,3 +13,7 @@ $routes->match(['post', 'get'], '/getData', 'MainController::getData');
 $routes->post('/save', 'MainController::save');
 $routes->match(['post', 'get'], '/amenitiesgetData', 'MainController::amenitiesgetData');
 $routes->post('/amenitiesSave', 'MainController::amenitiesSave');
+$routes->match(['post', 'get'], '/getCategory', 'MainController::getCategory');
+$routes->post('/saveCateg', 'MainController::saveCateg');
+$routes->match(['post', 'get'], '/getInventory', 'MainController::getInventory');
+$routes->post('/inventorySave', 'MainController::inventorySave');

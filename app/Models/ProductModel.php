@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AmenitiesModel extends Model
+class ProductModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'amenities';
+    protected $table            = 'product';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['name', 'category','description', 'price', 'amenities_image'];
+    protected $allowedFields    = ['product_name', 'category_id', 'price', 'quantity', 'status'];
 
     // Dates
     protected $useTimestamps = false;

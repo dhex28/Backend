@@ -1,0 +1,211 @@
+ERROR - 2023-11-17 09:25:34 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\writable\@/assets/imgroom_1700213134600.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:25:39 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\writable\@/assets/imgroom_1700213139401.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:35:42 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\public\assets/images/room_1700213741940.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:39:13 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\public\@/assets/images/room_1700213953462.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:39:15 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\public\@/assets/images/room_1700213955420.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:39:15 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\public\@/assets/images/room_1700213955628.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:39:16 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\public\@/assets/images/room_1700213956290.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:43:15 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\public\../../assets/images/room_1700214195876.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:43:17 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\public\../../assets/images/room_1700214197110.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 09:43:17 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\public\../../assets/images/room_1700214197320.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 10:02:45 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\app\assets/images/room_1700215365311.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 10:05:46 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\app\assets/images/room_1700215546504.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 10:05:48 --> Error saving data: file_put_contents(C:\laragon\www\Veronica_backend\app\assets/images/room_1700215548931.png): Failed to open stream: No such file or directory
+ERROR - 2023-11-17 10:49:48 --> Error saving data: The original file is not a valid file.
+ERROR - 2023-11-17 10:49:50 --> Error saving data: The original file is not a valid file.
+ERROR - 2023-11-17 14:20:28 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\laragon\www\Veronica_backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\laragon\www\Veronica_backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Veronica_backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Veronica_backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\Veronica_backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\Veronica_backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+#10 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#11 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\Veronica_backend\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-17 14:20:28 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aminities` (`name`, `description`, `price`) VALUES (:name:, :description:, :price:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-17 14:20:30 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\laragon\www\Veronica_backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\laragon\www\Veronica_backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Veronica_backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Veronica_backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\Veronica_backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\Veronica_backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+#10 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#11 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\Veronica_backend\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-17 14:20:30 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aminities` (`name`, `description`, `price`) VALUES (:name:, :description:, :price:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-17 14:25:15 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\laragon\www\Veronica_backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\laragon\www\Veronica_backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Veronica_backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Veronica_backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\Veronica_backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\Veronica_backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+#10 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#11 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\Veronica_backend\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-17 14:25:15 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aminities` (`name`, `description`, `price`) VALUES (:name:, :description:, :price:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-17 14:25:16 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\laragon\www\Veronica_backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\laragon\www\Veronica_backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Veronica_backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Veronica_backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\Veronica_backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\Veronica_backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+#10 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#11 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\Veronica_backend\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-17 14:25:16 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aminities` (`name`, `description`, `price`) VALUES (:name:, :description:, :price:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-17 14:25:16 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\laragon\www\Veronica_backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\laragon\www\Veronica_backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Veronica_backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Veronica_backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\Veronica_backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\Veronica_backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+#10 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#11 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\Veronica_backend\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-17 14:25:16 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aminities` (`name`, `description`, `price`) VALUES (:name:, :description:, :price:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-17 14:25:16 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\laragon\www\Veronica_backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\laragon\www\Veronica_backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Veronica_backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Veronica_backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\Veronica_backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\Veronica_backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+#10 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#11 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\Veronica_backend\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-17 14:25:16 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aminities` (`name`, `description`, `price`) VALUES (:name:, :description:, :price:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-17 14:25:16 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Veronica_backend\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\laragon\www\Veronica_backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\laragon\www\Veronica_backend\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\laragon\www\Veronica_backend\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\Veronica_backend\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\Veronica_backend\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\Veronica_backend\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\Veronica_backend\app\Controllers\MainController.php(89): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+#10 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#11 C:\laragon\www\Veronica_backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\Veronica_backend\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-17 14:25:16 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aminities` (`name`, `description`, `price`) VALUES (:name:, :description:, :price:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\MainController.php(89): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->aminitiessave()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
