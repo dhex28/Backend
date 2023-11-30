@@ -120,6 +120,11 @@ class MainController extends ResourceController
     public function inventorySave()
     {
         try {
+            // Use CodeIgniter's file helper to handle file uploads
+            $productImage = $this->request->getFile('product_image');
+    
+            // Use the provided image name
+            $imageName = $productImage->getName();
     
             $data = [
                 'product_name' => $this->request->getPost('product_name'),
@@ -127,6 +132,7 @@ class MainController extends ResourceController
                 'price' => $this->request->getPost('price'),
                 'quantity' => $this->request->getPost('quantity'),
                 'status' => $this->request->getPost('status'),
+                'product_image' => base_url() . $this->producthandleImageUpload($productImage, $imageName),
 
             ];
     
@@ -138,6 +144,14 @@ class MainController extends ResourceController
             log_message('error', 'Error saving data:' . $e->getMessage());
             return $this->failServerError('An error occurred while saving the data.');
         }
+    }
+    private function producthandleImageUpload($productImage, $imageName)
+    {
+        // Move the uploaded image to the desired directory
+        $productImage->move(ROOTPATH . 'public/uploads/product', $imageName);
+
+        // Return the relative path to save in the database
+        return 'uploads/product/' .$imageName;
     }
 
     public function getInventory()

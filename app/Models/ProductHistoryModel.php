@@ -4,16 +4,23 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProductModel extends Model
+class ProductHistoryModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'product';
+    protected $table            = 'product_history';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['product_name', 'category_id', 'price', 'quantity', 'status', 'product_image'];
+    protected $allowedFields    = ['product_id', 'previous_quantity', 'added_removed_quantity', 'new_quantity'];
+
+    public function getProductHistory($productId)
+    {
+        return $this->where('product_id', $productId)
+                    ->orderBy('date_added', 'DESC')
+                    ->findAll();
+    }
 
     // Dates
     protected $useTimestamps = false;
