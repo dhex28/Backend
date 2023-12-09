@@ -1,0 +1,162 @@
+CRITICAL - 2023-12-03 09:00:33 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 09:00:34 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 09:14:56 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 09:14:56 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 09:15:08 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 09:16:09 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 09:16:14 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 09:16:20 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 10:23:22 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 10:23:22 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 13:57:08 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 13:57:09 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 13:57:22 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 13:58:00 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 13:58:38 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:01:49 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:01:58 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:03:46 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->saveCateg()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:15:06 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:17:53 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:21:25 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:21:26 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:21:27 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:21:40 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:21:45 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:22:18 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-03 14:24:42 --> Class "AApp\Models\CategoryModel" not found
+in APPPATH\Controllers\ProductController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->getCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
