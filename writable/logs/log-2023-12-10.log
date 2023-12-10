@@ -1,0 +1,44 @@
+CRITICAL - 2023-12-10 04:48:35 --> Class "App\Controllers\BookingRoomModel" not found
+in APPPATH\Controllers\BookingRoomController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BookingRoomController->createBooking()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingRoomController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 04:48:54 --> Class "App\Controllers\BookingRoomModel" not found
+in APPPATH\Controllers\BookingRoomController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BookingRoomController->createBooking()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingRoomController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 04:52:43 --> Class "App\Controllers\BookingRoomModel" not found
+in APPPATH\Controllers\BookingRoomController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BookingRoomController->createBooking()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingRoomController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:15:34 --> Too few arguments to function App\Controllers\BookingRoomController::updateBookingStatus(), 0 passed in C:\laragon\www\Veronica_backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\BookingRoomController.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BookingRoomController->updateBookingStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingRoomController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 11:15:50 --> Too few arguments to function App\Controllers\BookingRoomController::updateBookingStatus(), 0 passed in C:\laragon\www\Veronica_backend\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\BookingRoomController.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\BookingRoomController->updateBookingStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingRoomController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 15:13:24 --> Undefined array key "amenity_id"
+in APPPATH\Controllers\ReservationAmenitiesController.php on line 38.
+ 1 APPPATH\Controllers\ReservationAmenitiesController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amenity_id"', 'C:\\laragon\\www\\Veronica_backend\\app\\Controllers\\ReservationAmenitiesController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ReservationAmenitiesController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationAmenitiesController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-10 15:15:24 --> Undefined array key "amenity_id"
+in APPPATH\Controllers\ReservationAmenitiesController.php on line 38.
+ 1 APPPATH\Controllers\ReservationAmenitiesController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amenity_id"', 'C:\\laragon\\www\\Veronica_backend\\app\\Controllers\\ReservationAmenitiesController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ReservationAmenitiesController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationAmenitiesController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()

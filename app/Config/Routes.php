@@ -33,3 +33,11 @@ $routes->match(['get', 'post'], '/api/updateQuantity', 'Home::updateQuantity');
 $routes->match(['get', 'post'], '/api/audit/(:any)', 'Home::audit/$1');
 $routes->match(['get', 'post'], '/api/newproduct', 'Home::newproduct');
 $routes->put('api/updateproduct/(:num)', 'Home::updateProduct/$1');
+
+//booking room
+$routes->match(['get', 'post'], '/api/bookingsRoom', 'BookingRoomController::createBooking');
+$routes->match(['get', 'post'], '/api/getBookingroom', 'BookingRoomController::getBookingroom'); ///api/updateBookingStatus
+$routes->match(['get', 'post'], '/api/updateBookingStatus/(:any)', 'BookingRoomController::updateBookingStatus/$1');
+
+//reserve amenities  /reservationAmenities/create
+$routes->match(['get', 'post'], '/api/reserveAmenity', 'ReservationAmenitiesController::create');
